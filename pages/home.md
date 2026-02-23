@@ -4,6 +4,16 @@ assetId: 5344d2f8-a0da-4007-977b-9cea0f1c12fb
 type: page
 ---
 
-# Welcome
+{% table
+    data="demo_daily_orders"
+%}
 
-This is your new project's homepage. Edit this file to get started.
+{% dimension
+    value="category"
+    link="concat('/category-detail?category_filter=\"', category,'\"')"
+/%}
+
+{% /table %}
+
+
+[New Link](/aa/category-detail)
